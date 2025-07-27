@@ -14,6 +14,7 @@ void main(List<String> args){
 
       continue;
     }
+    // mulinma integer keregene giyanam hari
 
     switch(age){
       case "10":
@@ -25,6 +26,21 @@ void main(List<String> args){
       case "30" :
         stdout.write("Your are 30 years old \n");
         break;
+
+      case "50" :
+      case "60" :
+        stdout.write("You are older \n");// me dekema unoth meke print wenewa hariyata if condition wela || wage
+        break;
+
+      case "80" :
+      continue toFifty; // methenai line number 37 ui ekema wachanaya thiyenne ona. Mekath if condition wela || wage thamai
+      toFifty:
+      case "90":
+        stdout.write("You are very old\n");
+        break;
+
+
+
       default :
         stdout.writeln("Your age is $age");
         break;
